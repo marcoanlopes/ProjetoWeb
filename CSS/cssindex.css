@@ -57,7 +57,9 @@ section {
 
 footer {
     text-align: center;
-    margin-top: 20px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;  
 }
 .link{
     text-decoration:none;
@@ -74,9 +76,3 @@ p{
     line-height: 0;
 }
 
-footer{
-    text-align: center;
-    font-size: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: black;  
-}
