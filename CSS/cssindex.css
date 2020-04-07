@@ -73,3 +73,10 @@ h1{
 p{
     line-height: 0;
 }
+
+footer{
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;  
+}
