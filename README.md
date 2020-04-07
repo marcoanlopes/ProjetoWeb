@@ -1,2 +1,2 @@
 # ProjetoWeb
-# Projeto de desenvolver página html utilizando elementos do css
+# Projeto  para desenvolver uma página html utilizando elementos do css
