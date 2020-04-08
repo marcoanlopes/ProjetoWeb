@@ -1,0 +1,45 @@
+body {
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+header {
+    color: snow;
+    font: 200;
+    font-size: 40px;
+    background-color: #8B2323;
+    padding: 10px;
+    font-family: Lucida Console, Arial, Helvetica;
+}
+
+nav {
+    text-align: center;
+}
+ 
+ul {
+    font-size: 20px;
+    list-style-type: none;
+    text-decoration: none;
+    padding-top: 13px;
+    padding-bottom: 10px;
+}
+/* O LI É PARA OS BOTÕES DE NAVEGAÇÃO */
+li {
+    display: inline;
+    text-align: center;
+    font-family: Calibri, Arial, Helvetica;
+    color: #CD5B45;
+    border: #CD5B45 2px solid;
+    border-radius: 4px;
+    padding: 10px;
+}
+/* O LI HOVER É PARA A ANIMAÇÃO E MUDANÇA DE COR DO BOTÃO */
+li a:hover{
+    background-color: rgb(248, 194, 188); 
+    transition-duration: 0.2s;
+    color: black;
+    border-radius: 2px;
+    padding: 10px;
+    margin: -10px;
+}
