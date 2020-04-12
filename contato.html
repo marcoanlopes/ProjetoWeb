@@ -16,16 +16,16 @@
 
     <nav>
         <ul>
-                <li><a href="index.html" class="link">Index</li></a>
-                <li><a href="cv/Lucas.html" class="link">Aluno 1</li></a>
-                <li><a href="cv/Marco.html" class="link">Aluno 2</li></a>
-                <li><a href="cv/Nathan.html" class="link">Aluno 3</li></a>
-                <li><a href="contato.html" class="link">Contato</li></a>
+            <li><a href="index.html" class="link">Index</li></a>
+            <li><a href="AlunoLucas.html" class="link">Aluno 1</li></a>
+            <li><a href="AlunoMarco.html" class="link">Aluno 2</li></a>
+            <li><a href="AlunoNathan.html" class="link">Aluno 3</li></a>
+            <li><a href="contato.html" class="link">Contato</li></a>
         </ul>
     </nav>
 
     <fieldset>
-        <div>
+        <form method="post">
             <legend>Formulário de Contato</legend>
 
             <Label for="txtNome" class="descricao">Nome:</Label><br>
@@ -35,7 +35,7 @@
             <input name="txtEmail" id="txtEmail" type="email" placeholder="Digite seu E-mail"></imput> <br>
 
             <Label for="txtTelefone" class="descricao">Telefone:</Label><br>
-            <input name="txtTelefone" id="txtTelefone" type="number" placeholder="Digite seu Telefone"></imput> <br>
+            <input name="txtTelefone" id="txtTelefone" type="tel" placeholder="Digite seu Telefone"></imput> <br>
 
             <label for="selPrioridade" class="descricao">Prioridade:</label><br>
             <select name="selPrioridade" id="selPrioridade">
@@ -45,14 +45,31 @@
             </select><br>
 
             <label class="descricao">Mensagem:</label><br>
-            <textarea placeholder="Mensagem teste!"></textarea><br>
+            <textarea id="txtMensagem" placeholder="Mensagem teste!"></textarea><br>
 
-            <input type="submit" value="Enviar!">
-        </div>
+            <input onclick="JavaScript()" type="button" value="Enviar!">
+
+        </form>
     </fieldset>
 
     <footer>&copy; Desenvolvido por Lucas Rocha, Marco Lopes e Lucas Nathan - 2020</footer>
 
 </body>
+
+<script>
+    function JavaScript() {
+        novaAba = window.open('', 'NewWin', 'toolbar=no,status=no,width=500, height=500')
+
+        var a = "<h1> Nome: " + document.getElementById("txtNome").value + "</h1>";
+        a += "<h1> E-mail: " + document.getElementById("txtEmail").value + "</h1>";
+        a += "<h1> Telefone: " + document.getElementById("txtTelefone").value + "</h1>";
+        a += "<h1> Prioridade: " + document.getElementById("selPrioridade").value + "</h1>";
+        a += "<h1> Mensagem: " + document.getElementById("txtMensagem").value + "</h1>";
+        console.log(a);
+        novaAba.document.write(a);
+
+        //https://stackoverflow.com/questions/40968437/submitting-form-in-a-popup-window
+    }
+</script>
 
 </html>
