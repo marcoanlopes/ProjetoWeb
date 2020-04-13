@@ -1,52 +1,65 @@
 body {
     padding: 30px;
-    background-color: #E8E8E8;
+    background-color: #8B2323;
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    color: snow;
 }
 
 header {
-    margin-bottom: 0px;
+    padding: 10px;
     font-family: Lucida Console, Arial, Helvetica;
-    font-size: 60px;
+    font-size: 40px;
 }
 
 nav {
-    border-top: double 3px #6C7B8B;
-    border-bottom: double 3px #6C7B8B;
+    border-top: solid 3px #FF4040;
+    border-bottom: solid 3px #FF4040;
     text-align: center;
-    text-decoration:none;
-
+    text-decoration: none;
 }
 
 ul {
-    font-size: 30px;
+    font-size: 20px;
     list-style-type: none;
-    text-decoration:none;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 li {
     display: inline;
     text-align: center;
     font-family: Calibri, Arial, Helvetica;
-    background-color: #CDC9C9;
+    color: white;
+    border: #FF4040 2px solid;
+    border-radius: 4px;
     padding: 10px;
-    margin: 5px;
-    text-decoration:none;
-    
+}
+
+li a:hover {
+    background-color: rgb(248, 194, 188);
+    transition-duration: 0.2s;
+    color: black;
+    border-radius: 2px;
+    padding: 10px;
+    margin: -10px;
+}
+
+.link {
+    text-decoration: none;
+    color: snow;
 }
 
 section {
     display: flex;
-    border-bottom: double 3px #6C7B8B;
+    border-bottom: solid 3px #FF4040;
 }
 
 .conteudo {
     flex: 1;
     margin: 20px;
-    border-right: double 3px #6C7B8B;
+    border-right: solid 3px #FF4040;
     padding-bottom: 80px;
-    line-height: 1;
 }
 
 #aluno3 {
@@ -55,24 +68,15 @@ section {
     padding-bottom: 80px;
 }
 
+h1 {
+    margin-bottom: 2px;
+}
+
+p {
+    margin-top: 2px;
+}
+
 footer {
     text-align: center;
-    font-size: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: black;  
+    margin-top: 20px;
 }
-.link{
-    text-decoration:none;
-    color: black;
-}
-
-h1{
-    line-height: 1.2;
-    text-justify: auto;
-
-   
-}
-p{
-    line-height: 0;
-}
-
