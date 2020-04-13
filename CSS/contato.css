@@ -11,12 +11,13 @@ header {
     background-color: #8B2323;
     padding: 10px;
     font-family: Lucida Console, Arial, Helvetica;
+    border-radius: 4px;
 }
 
 nav {
     text-align: center;
 }
- 
+
 ul {
     font-size: 20px;
     list-style-type: none;
@@ -24,22 +25,101 @@ ul {
     padding-top: 13px;
     padding-bottom: 10px;
 }
+
+
 /* O LI É PARA OS BOTÕES DE NAVEGAÇÃO */
+
 li {
     display: inline;
     text-align: center;
     font-family: Calibri, Arial, Helvetica;
-    color: #CD5B45;
-    border: #CD5B45 2px solid;
+    color: #FF4040;
+    border: #FF4040 2px solid;
     border-radius: 4px;
     padding: 10px;
 }
+
+
 /* O LI HOVER É PARA A ANIMAÇÃO E MUDANÇA DE COR DO BOTÃO */
-li a:hover{
-    background-color: rgb(248, 194, 188); 
+
+li a:hover {
+    background-color: rgb(248, 194, 188);
     transition-duration: 0.2s;
     color: black;
     border-radius: 2px;
     padding: 10px;
     margin: -10px;
+}
+
+.link {
+    text-decoration: none;
+    color: #FF4040;
+}
+
+fieldset {
+    border-right: none;
+    border-left: none;
+    border-color: #FF4040;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-size: 30px;
+    margin: 10px 5px;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.descricao {
+    font-weight: 700;
+    margin: 8px;
+}
+
+input {
+    width: 30%;
+    padding: 8px;
+    margin: 8px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px solid slategray;
+}
+
+input:focus {
+    border: 2px solid #FF4040;
+}
+
+input[type=button] {
+    background-color: #8B2323;
+}
+
+textarea {
+    width: 30%;
+    height: 100px;
+    padding: 8px;
+    margin: 8px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px solid slategray;
+}
+
+textarea:focus {
+    border: 2px solid #FF4040
+}
+
+#selPrioridade {
+    width: 30%;
+    padding: 8px;
+    margin: 8px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px solid slategray;
+}
+
+#selPrioridade:focus {
+    border: 2px solid #FF4040
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
 }
