@@ -90,6 +90,7 @@ input:focus {
 
 input[type=button] {
     background-color: #8B2323;
+    color: white;
 }
 
 textarea {
